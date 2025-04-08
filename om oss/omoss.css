@@ -3,7 +3,10 @@
     
 }
 body {
-    display: grid;
+    max-width: 100vh;
+    display: flex;
+    justify-content: center;
+    
 }
 .menubox {
     display: grid;
@@ -34,27 +37,4 @@ nav ul a{
    /*justify-content: right;*/
     text-decoration: none;
     color: black;
-}
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "huvud huvud"
-    "under1 under2";
-}
-.huvudbild {
-    /* display: block; */
-    background-image: url(img/huvudbild.webp);
-    height: 500px;
-    grid-area: huvud;
-}
-.underbild{
-    height: 500px;
-    background-color: aqua;
-    grid-area: under1;
-}
-.underbild2 {
-    height: 500px;
-    background-color: aquamarine;
-    grid-area: under2;
 }
