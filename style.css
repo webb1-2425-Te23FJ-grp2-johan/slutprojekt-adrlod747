@@ -3,7 +3,13 @@
     
 }
 body {
-    display: grid;
+   background-color: cornflowerblue;
+}
+.alles {
+    margin: 0;
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
 }
 .menubox {
     display: grid;
