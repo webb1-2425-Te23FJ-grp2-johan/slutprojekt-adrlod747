@@ -12,7 +12,7 @@ body {
     grid-template-columns: 1fr 15fr;
     grid-template-areas: 
     "logga meny";
-    
+    max-width: 1200px;
 }
 .menu {
     height: 100px;
