@@ -7,12 +7,24 @@ body {
     justify-content: center;
     
 }
+.alles {
+    margin: 0;
+    max-width: 1200px;
+    display: grid;
+    /* gap: 20px; */
+    grid-template-rows: min-content 1fr;
+    grid-template-areas: 
+    "men"
+    "cont";
+
+}
 .menubox {
     display: grid;
     grid-template-columns: 1fr 15fr;
     grid-template-areas: 
     "logga meny";
     max-width: 1200px;
+    grid-area: men;
 }
 .menu {
     height: 100px;
@@ -37,4 +49,61 @@ nav ul a{
    /*justify-content: right;*/
     text-decoration: none;
     color: black;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "bel elin ladd smar";
+    grid-area: cont;
+}
+.belysnin {
+    background-color: aliceblue;
+    height: 100px;
+    grid-area: bel;
+}
+.belysnin p {
+    display: none;
+}
+.belysnin:hover, .belysnin:hover p {
+    height: 200px;
+    display:block
+}
+
+.elinstalation {
+    background-color: aliceblue;
+    height: 100px; 
+    grid-area: elin;
+}
+.elinstalation p {
+    display: none;
+}
+.elinstalation:hover, .elinstalation:hover p {
+    height: 200px;
+    display:block
+}
+.laddbox {
+    background-color: aliceblue;
+    height: 100px;
+    grid-area: ladd; 
+}
+.laddbox p {
+    display: none;
+}
+.laddbox:hover, .laddbox:hover p {
+    height: 200px;
+    display:block
+}
+.smarthem {
+    background-color: aliceblue;
+    height: 100px;
+    grid-area: smar; 
+}
+.smarthem p {
+    display: none;
+}
+.smarthem:hover, .smarthem:hover p {
+    height: 200px;
+    display:block
 }
