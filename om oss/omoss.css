@@ -50,60 +50,70 @@ nav ul a{
     text-decoration: none;
     color: black;
 }
+img {
+    border-radius: 20px;
+}
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-    "bel elin ladd smar";
+    "bel elin"
+    "ladd smar";
     grid-area: cont;
 }
 .belysnin {
     background-color: aliceblue;
-    height: 100px;
+    height: 400px;
     grid-area: bel;
+    padding: 10px;
 }
 .belysnin p {
     display: none;
 }
 .belysnin:hover, .belysnin:hover p {
-    height: 200px;
+    height: 450px;
     display:block
 }
-
+.belysnin:hover .elinstalation{
+    height: 450px;
+}
 .elinstalation {
     background-color: aliceblue;
-    height: 100px; 
+    height: 400px; 
     grid-area: elin;
+    padding: 10px;
 }
 .elinstalation p {
     display: none;
 }
 .elinstalation:hover, .elinstalation:hover p {
-    height: 200px;
+    height: 450px;
     display:block
 }
 .laddbox {
     background-color: aliceblue;
-    height: 100px;
+    height: 400px;
     grid-area: ladd; 
+    padding: 10px;
 }
 .laddbox p {
     display: none;
 }
 .laddbox:hover, .laddbox:hover p {
-    height: 200px;
+    height: 450px;
     display:block
 }
 .smarthem {
     background-color: aliceblue;
-    height: 100px;
+    height: 400px;
     grid-area: smar; 
+    padding: 10px;
 }
 .smarthem p {
     display: none;
 }
 .smarthem:hover, .smarthem:hover p {
-    height: 200px;
+    height: 450px;
     display:block
 }
