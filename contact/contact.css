@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    
+}
+body {
+   background-color:beige;
+   justify-content: center;
+   display: flex;
+   
+}
+.alles {
+    margin: 0;
+    max-width: 1200px;
+    display: grid;
+    /* gap: 20px; */
+    grid-template-rows: min-content 1fr;
+    grid-template-areas: 
+    "men"
+    "cont";
+
+}
+.menubox {
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+    grid-template-areas: 
+    "logga meny";
+    grid-area: men;
+    
+}
+.menu {
+    height: 100px;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    background-color: grey;
+    align-items: center;
+    margin: 0;
+    grid-area: meny;
+}
+.logga {
+    grid-area: logga;
+    background-color: black;
+    align-items: center;
+}
+nav ul a{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 100px;
+    padding: 5px;
+   /*justify-content: right;*/
+    text-decoration: none;
+    color: black;
+}
+/* .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "contact contact";
+    grid-area: cont;
+}
+.contact {
+    margin-top: 50px;
+    height: 200px;
+    grid-area: contact;
+    background-color:aliceblue;
+} */

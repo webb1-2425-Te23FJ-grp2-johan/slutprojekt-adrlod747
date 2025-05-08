@@ -3,11 +3,13 @@
     
 }
 body {
+    background-color: #319ea1;
     display: flex;
     justify-content: center;
     
 }
 .alles {
+    background-color: #a13166;
     margin: 0;
     max-width: 1200px;
     display: grid;
@@ -20,10 +22,10 @@ body {
 }
 .menubox {
     display: grid;
-    grid-template-columns: 1fr 15fr;
+    /* grid-template-columns: 1fr 15fr;
     grid-template-areas: 
-    "logga meny";
-    max-width: 1200px;
+    "logga meny"; */
+    min-width: 1200px;
     grid-area: men;
 }
 .menu {
@@ -31,16 +33,16 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    background-color: grey;
+    background-color: #a13431;
     align-items: center;
     margin: 0;
     grid-area: meny;
 }
-.logga {
+/* .logga {
     grid-area: logga;
     background-color: black;
     align-items: center;
-}
+} */
 nav ul a{
     display: flex;
     margin-left: 50px;
@@ -63,7 +65,7 @@ img {
     grid-area: cont;
 }
 .belysnin {
-    background-color: aliceblue;
+    background-color: #a13166;
     height: 400px;
     grid-area: bel;
     padding: 10px;
@@ -73,13 +75,15 @@ img {
 }
 .belysnin:hover, .belysnin:hover p {
     height: 450px;
-    display:block
+    display:block;
+    /* width: 200%; */
+    transition: 0.2s;
 }
-.belysnin:hover .elinstalation{
+/* .belysnin:hover .elinstalation {
     height: 450px;
-}
+} */
 .elinstalation {
-    background-color: aliceblue;
+    background-color: #a13166;
     height: 400px; 
     grid-area: elin;
     padding: 10px;
@@ -89,10 +93,11 @@ img {
 }
 .elinstalation:hover, .elinstalation:hover p {
     height: 450px;
-    display:block
+    display:block;
+    transition: 0.2s;
 }
 .laddbox {
-    background-color: aliceblue;
+    background-color: #a13166;
     height: 400px;
     grid-area: ladd; 
     padding: 10px;
@@ -102,10 +107,11 @@ img {
 }
 .laddbox:hover, .laddbox:hover p {
     height: 450px;
-    display:block
+    display:block;
+    transition: 0.2s;
 }
 .smarthem {
-    background-color: aliceblue;
+    background-color: #a13166;
     height: 400px;
     grid-area: smar; 
     padding: 10px;
@@ -115,5 +121,6 @@ img {
 }
 .smarthem:hover, .smarthem:hover p {
     height: 450px;
-    display:block
+    display:block;
+    transition: 0.2s;
 }
