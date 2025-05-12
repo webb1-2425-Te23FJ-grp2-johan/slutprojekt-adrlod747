@@ -10,7 +10,7 @@ body {
 }
 .alles {
     margin: 0;
-    max-width: 1200px;
+    min-width: 1200px;
     display: grid;
     /* gap: 20px; */
     grid-template-rows: min-content 1fr;
@@ -21,9 +21,7 @@ body {
 }
 .menubox {
     display: grid;
-    grid-template-columns: 1fr 15fr;
-    grid-template-areas: 
-    "logga meny";
+    grid-template-columns: 1fr;
     grid-area: men;
     
 }
@@ -37,11 +35,7 @@ body {
     margin: 0;
     grid-area: meny;
 }
-.logga {
-    grid-area: logga;
-    background-color: black;
-    align-items: center;
-}
+
 nav ul a{
     display: flex;
     margin-left: 50px;
@@ -50,6 +44,9 @@ nav ul a{
    /*justify-content: right;*/
     text-decoration: none;
     color: black;
+}
+.mail {
+    
 }
 /* .container {
     display: grid;
