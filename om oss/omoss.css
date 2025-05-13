@@ -111,6 +111,8 @@ img {
     transition: 0.2s;
 }
 .smarthem {
+    display: grid;
+    justify-content: center;
     background-color: #a13166;
     height: 400px;
     grid-area: smar; 

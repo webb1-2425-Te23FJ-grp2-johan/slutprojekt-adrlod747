@@ -46,7 +46,17 @@ nav ul a{
     color: black;
 }
 .mail {
-    
+    display: flex;
+    align-items: center;
+}
+.telefon{
+    display: flex;
+    align-items: center;
+}
+.x {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 /* .container {
     display: grid;
