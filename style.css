@@ -1,103 +1,114 @@
 * {
-    box-sizing: border-box;
-    
+  box-sizing: border-box;
 }
 body {
-       background: linear-gradient(100deg, rgb(123,123,123), rgb(20,100,20));
-   justify-content: center;
-   display: flex;
-   
+  background-color: whitesmoke;
+  /* background: linear-gradient(100deg, rgb(255, 255, 255), rgb(255, 255, 255)); */
+  justify-content: center;
+  display: flex;
 }
 .alles {
-    margin: 0;
-    max-width: 1200px;
-    display: grid;
-    /* gap: 20px; */
-    grid-template-rows: min-content 1fr;
-    grid-template-areas: 
+  margin: 0;
+  max-width: 1200px;
+  display: grid;
+  /* gap: 20px; */
+  grid-template-rows: min-content 1fr;
+  grid-template-areas:
     "men"
     "cont";
-
 }
 .menubox {
-    display: grid;
-    grid-template-columns: 1fr 15fr;
-    grid-template-areas: 
-    "logga meny";
-    grid-area: men;
-    
+  grid-area: men;
 }
 .menu {
-    height: 100px;
-    list-style: none;
-    display: flex;
-    justify-content: end;
-    background-color: grey;
-    align-items: center;
-    margin: 0;
-    grid-area: meny;
+  height: 100px;
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  background-color: #fdbf62;
+  align-items: center;
+  margin: 0;
+  grid-area: meny;
 }
-.logga {
+/* .logga {
     grid-area: logga;
     background-color: black;
     align-items: center;
-}
-nav ul a{
-    display: flex;
-    margin-left: 50px;
-    margin-right: 100px;
-    padding: 5px;
-   /*justify-content: right;*/
-    text-decoration: none;
-    color: black;
+} */
+nav ul a {
+  display: flex;
+  margin-left: 50px;
+  margin-right: 100px;
+  padding: 5px;
+  /*justify-content: right;*/
+  text-decoration: none;
+  color: black;
 }
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
     "huvud huvud"
     "under1 under2"
+    "under3 under3"
     "contact contact";
-    grid-area: cont;
-    
-    /* gap: 20px; */
+  grid-area: cont;
+
+  /* gap: 20px; */
 }
 .huvudbild {
-    /* display: block; */
-    background-image: url(img/huvudbild.webp);
-    height: 500px;
-    grid-area: huvud;
-    font-weight: 900;
-    font-size: 200px;
-    margin: 10px;
-    color: white;
+  /* display: block; */
+  background-image: url(img/huvudbilden.webp);
+  height: 500px;
+  grid-area: huvud;
+  font-weight: 900;
+  font-size: 200px;
+  margin-top: 10px;
+  color: white;
+  border-radius: 20px;
 }
-.underbild{
-    height: 300px;
-    background: linear-gradient(100deg, purple, blue);
-    grid-area: under1;
-    margin: 10px;
+.underbild {
+  height: 300px;
+  background-color: whitesmoke;
+  grid-area: under1;
+  margin: 10px;
+}
+#boka {
+  color: black;
+  text-decoration: none;
+  border: solid thin black;
+  background-color: #fdbf62;
+  padding: 10px;
+  margin-top: 10px;
 }
 .underbild2 {
-    height: 500px;
-    background-color: aquamarine;
-    grid-area: under2;
-    margin: 10px;
+  height: 410px;
+  background-image: url(/img/underbild2.webp);
+  border-radius: 50px;
+  border: solid thick #fdbf62;
+  grid-area: under2;
+  margin: 10px;
+}
+.underbild3 {
+  grid-area: under3;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .contact {
-    margin-top: 50px;
-    height: 200px;
-    grid-area: contact;
-    background-color:aliceblue;
+  margin-top: 50px;
+  height: 200px;
+  grid-area: contact;
+  background-color: aliceblue;
 }
-.cookie{
+.cookie {
   position: fixed;
   border-radius: 0%;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 5;
 }
 
