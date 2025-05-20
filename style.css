@@ -9,19 +9,23 @@ body {
 }
 .alles {
   margin: 0;
-  max-width: 1200px;
   display: grid;
-  /* gap: 20px; */
   grid-template-rows: min-content 1fr;
   grid-template-areas:
     "men"
     "cont";
 }
 .menubox {
+  width: 100%;
   grid-area: men;
+  display: grid;
+  align-items: center;
+  grid-template-areas: 
+  "logga meny";
 }
 .menu {
   height: 100px;
+  width: 1030px;
   list-style: none;
   display: flex;
   justify-content: end;
@@ -30,11 +34,11 @@ body {
   margin: 0;
   grid-area: meny;
 }
-/* .logga {
+.logga {
+    width: 170px;
     grid-area: logga;
-    background-color: black;
     align-items: center;
-} */
+}
 nav ul a {
   display: flex;
   margin-left: 50px;
@@ -42,9 +46,15 @@ nav ul a {
   padding: 5px;
   /*justify-content: right;*/
   text-decoration: none;
-  color: black;
+  color: #fdbf62;
+  background-color: beige;
+  border-radius: 20px;
+}
+nav ul a:hover{
+  color: white;
 }
 .container {
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -72,14 +82,17 @@ nav ul a {
   background-color: whitesmoke;
   grid-area: under1;
   margin: 10px;
+  margin-top: 20px;
 }
 #boka {
   color: black;
   text-decoration: none;
-  border: solid thin black;
+  /* border: solid thin black; */
+  border-radius: 10px;
   background-color: #fdbf62;
   padding: 10px;
-  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .underbild2 {
   height: 410px;
@@ -88,12 +101,15 @@ nav ul a {
   border: solid thick #fdbf62;
   grid-area: under2;
   margin: 10px;
+  margin-top: 20px;
 }
 .underbild3 {
   grid-area: under3;
   text-align: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 .contact {
   margin-top: 50px;

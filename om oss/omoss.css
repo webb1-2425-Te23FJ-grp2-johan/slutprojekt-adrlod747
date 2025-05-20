@@ -9,7 +9,7 @@ body {
     
 }
 .alles {
-    background-color: #a13166;
+    background-color: #ffd000;
     margin: 0;
     max-width: 1200px;
     display: grid;
@@ -65,7 +65,9 @@ img {
     grid-area: cont;
 }
 .belysnin {
-    background-color: #a13166;
+    display: grid;
+    justify-content: center;
+    background-color: #ffd000;
     height: 400px;
     grid-area: bel;
     padding: 10px;
@@ -81,7 +83,9 @@ img {
 }
 
 .elinstalation {
-    background-color: #a13166;
+    display: grid;
+    justify-content: center;
+    background-color: #ffd000;
     height: 400px; 
     grid-area: elin;
     padding: 10px;
@@ -95,7 +99,9 @@ img {
     transition: 0.2s;
 }
 .laddbox {
-    background-color: #a13166;
+    display: grid;
+    justify-content: center;
+    background-color: #ffd000;
     height: 400px;
     grid-area: ladd; 
     padding: 10px;
@@ -111,7 +117,7 @@ img {
 .smarthem {
     display: grid;
     justify-content: center;
-    background-color: #a13166;
+background-color: #ffd000;
     height: 400px;
     grid-area: smar; 
     padding: 10px;
