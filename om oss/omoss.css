@@ -3,13 +3,13 @@
     
 }
 body {
-    background-color: #319ea1;
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
     
 }
 .alles {
-    background-color: #ffd000;
+    background-color: beige;
     margin: 0;
     max-width: 1200px;
     display: grid;
@@ -33,7 +33,7 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    background-color: #a13431;
+    background-color: #fdbf62;
     align-items: center;
     margin: 0;
     grid-area: meny;
@@ -67,7 +67,7 @@ img {
 .belysnin {
     display: grid;
     justify-content: center;
-    background-color: #ffd000;
+    background-color: beige;
     height: 400px;
     grid-area: bel;
     padding: 10px;

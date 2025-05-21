@@ -82,7 +82,7 @@ nav ul a:hover{
   background-color: whitesmoke;
   grid-area: under1;
   margin: 10px;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 #boka {
   color: black;
@@ -101,7 +101,7 @@ nav ul a:hover{
   border: solid thick #fdbf62;
   grid-area: under2;
   margin: 10px;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 .underbild3 {
   grid-area: under3;
@@ -137,8 +137,8 @@ nav ul a:hover{
   border: solid thick black;
   padding: 20px;
   position: fixed;
-  top: 400px;
-  left: 750px;
+  top: 0px;
+  left: 50%;
   z-index: 6;
 }
 
