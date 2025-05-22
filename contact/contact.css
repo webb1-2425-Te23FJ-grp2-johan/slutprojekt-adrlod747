@@ -45,29 +45,37 @@ nav ul a{
     text-decoration: none;
     color: black;
 }
+.container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "mail mail"
+    "tel tel"
+    "twitter twitter" 
+    "contact contact";
+    grid-area: cont;
+}
 .mail {
+    grid-area: mail;
     display: flex;
     align-items: center;
 }
 .telefon{
+    grid-area: tel;
     display: flex;
     align-items: center;
 }
-.x {
+.twitter {
+    grid-area: twitter;
     display: flex;
     align-items: center;
     gap: 15px;
 }
-/* .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "contact contact";
-    grid-area: cont;
-}
+
 .contact {
     margin-top: 50px;
     height: 200px;
     grid-area: contact;
     background-color:aliceblue;
-} */
+}

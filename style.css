@@ -1,11 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   box-sizing: border-box;
 }
 body {
   background-color: whitesmoke;
+  font-family: "Roboto";
   /* background: linear-gradient(100deg, rgb(255, 255, 255), rgb(255, 255, 255)); */
   justify-content: center;
   display: flex;
+}
+h2 {
+  font-weight: 800;
+  letter-spacing: 0rem;
 }
 .alles {
   margin: 0;
@@ -20,8 +27,7 @@ body {
   grid-area: men;
   display: grid;
   align-items: center;
-  grid-template-areas: 
-  "logga meny";
+  grid-template-areas: "logga meny";
 }
 .menu {
   height: 100px;
@@ -35,32 +41,37 @@ body {
   grid-area: meny;
 }
 .logga {
-    width: 170px;
-    grid-area: logga;
-    align-items: center;
+  width: 170px;
+  grid-area: logga;
+  align-items: center;
 }
 nav ul a {
   display: flex;
   margin-left: 50px;
   margin-right: 100px;
-  padding: 5px;
+  padding: 10px 20px;
   /*justify-content: right;*/
   text-decoration: none;
   color: #fdbf62;
-  background-color: beige;
+  background-color: whitesmoke;
   border-radius: 20px;
+  font-weight: 900;
 }
-nav ul a:hover{
-  color: white;
+nav ul a:hover {
+  color: whitesmoke;
+  background-color: transparent;
+  outline: solid thin white;
 }
 .container {
   max-width: 1200px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
     "huvud huvud"
     "under1 under2"
     "under3 under3"
+    "cust cust"
     "contact contact";
   grid-area: cont;
 
@@ -78,12 +89,18 @@ nav ul a:hover{
   border-radius: 20px;
 }
 .underbild {
-  height: 300px;
-  background-color: whitesmoke;
+  height: 410px;
   grid-area: under1;
+  /* padding-left: 30px;
+  padding-right: 30px; */
   margin: 10px;
-  margin-top: 100px;
+  margin-top: 200px;
+  /* border-radius: 50px;
+  border: solid thick #fdbf62; */
 }
+/* .underbild h2{
+  text-align: center;
+} */
 #boka {
   color: black;
   text-decoration: none;
@@ -93,6 +110,7 @@ nav ul a:hover{
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0px;
 }
 .underbild2 {
   height: 410px;
@@ -101,7 +119,7 @@ nav ul a:hover{
   border: solid thick #fdbf62;
   grid-area: under2;
   margin: 10px;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 .underbild3 {
   grid-area: under3;
@@ -111,11 +129,112 @@ nav ul a:hover{
   padding-left: 200px;
   padding-right: 200px;
 }
+.customer {
+  grid-area: cust;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "snabb satis rece"
+    "snt sat rt";
+  margin-top: 100px;
+}
+#snabb {
+  grid-area: snabb;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -20px;
+  z-index: 10;
+}
+#satis {
+  grid-area: satis;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -20px;
+  z-index: 10;
+}
+#rece {
+  grid-area: rece;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -20px;
+  z-index: 10;
+}
+#snabb-text {
+  text-align: center;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  grid-area: snt;
+  border-radius: 20px;
+  background-color: #fdbf62;
+  color: white;
+  padding: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#satis-text {
+  text-align: center;
+  grid-area: sat;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  background-color: #fdbf62;
+  color: white;
+  padding: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#rece-text {
+  text-align: center;
+  grid-area: rt;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+  background-color: #fdbf62;
+  color: white;
+  padding: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 .contact {
-  margin-top: 50px;
+  margin-top: 200px;
   height: 200px;
   grid-area: contact;
-  background-color: aliceblue;
+  background-color: #fdbf62;
+  border: solid thin black;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "serv cus oss";
+}
+#service {
+  grid-area: serv;
+}
+#kontakt-vy {
+  color: black;
+  text-decoration: none;
+  font-size: large;
+}
+#kvt {
+  display: none;
+}
+#service:hover p {
+  display: block;
+  margin-left: 10px;
+}
+#contact-us {
+  grid-area: cus;
+}
+#contact-us:hover p {
+  display: block;
+  margin-left: 10px;
+}
+#om-oss {
+  grid-area: oss;
+}
+#om-oss:hover p {
+  display: block;
+  margin-left: 10px;
 }
 .cookie {
   position: fixed;
@@ -125,21 +244,22 @@ nav ul a:hover{
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 5;
+  z-index: 100;
 }
 
 .annoying {
   display: grid;
   align-items: end;
   width: 400px;
-  height: 600px;
-  background-color: bisque;
-  border: solid thick black;
+  height: 300px;
+  background-color: whitesmoke;
+  border: solid thick #fdbf62;
+  border-radius: 20px;
   padding: 20px;
   position: fixed;
-  top: 0px;
-  left: 50%;
-  z-index: 6;
+  margin-left: auto;
+  margin-top: 100px;
+  z-index: 101;
 }
 
 .Button {
@@ -149,9 +269,26 @@ nav ul a:hover{
   text-align: center;
   bottom: 0px;
   border: solid thin black;
+  border-radius: 10px;
+  background-color: #fdbf62;
 }
 
 .Button:hover {
+  background-color: gray;
+  color: white;
+  transition: 0.3s;
+}
+.Button2 {
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  bottom: 0px;
+  border: solid thin black;
+  border-radius: 10px;
+}
+
+.Button2:hover {
   background-color: gray;
   color: white;
   transition: 0.3s;
