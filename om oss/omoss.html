@@ -4,30 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="omoss.css" />
+    <link rel="stylesheet" href="/lighbox/simple-lightbox.css" />
     <link rel="shortcut icon" href="/img/bilxt-icon.webp" type="image/x-icon" />
     <title>Bästa elektrikern i Linköping</title>
   </head>
   <body>
     <div class="alles">
       <div class="menubox">
-        <!-- <div class="logga"><img src="/img/logga.webp" alt="" /></div> -->
+        <div class="logga"><img src="/img/bilxt-icon.webp" alt="" /></div>
         <nav>
           <ul class="menu">
             <li>
-              <a href="/index.html">Home</a>
+              <a href="/index.html">Hem</a>
             </li>
             <li>
-              <a href="omoss.html">About</a>
+              <a href="omoss.html">Tjänster</a>
             </li>
             <li>
-              <a href="/contact/contact.html">Contact</a>
+              <a href="/contact/contact.html">Kontakta oss</a>
             </li>
           </ul>
         </nav>
       </div>
       <div class="container">
         <div class="belysnin">
-          <img src="/img/elektrikerpolarn-belysning-hero.webp" alt="" />
+          <div class="gallery">
+            <a href="/img/elektrikerpolarn-belysning-hero.webp"
+              ><img
+                src="/img/elektrikerpolarn-belysning-hero.webp"
+                alt=""
+                title="Belysning"
+            /></a>
+          </div>
+
           <h2>Belysning</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
@@ -38,8 +47,15 @@
           </p>
         </div>
         <div class="elinstalation">
-          <img src="/img/elinstalation.webp" alt="" />
-          <h2>elinstalation</h2>
+          <div class="gallery">
+            <a href="/img/elinstalation.webp"
+              ><img
+                src="/img/elinstalation.webp"
+                alt=""
+                title="Elinstalation"
+            /></a>
+          </div>
+          <h2>Elinstalation</h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis atque
             in, asperiores odit ad fuga dolorum sunt dicta recusandae rerum
@@ -48,8 +64,15 @@
           </p>
         </div>
         <div class="laddbox">
-          <img src="/img/ladddbox.webp" alt="" />
-          <h2>laddbox</h2>
+          <div class="gallery">
+            <a href="/img/ladddbox.webp"
+              ><img
+                src="/img/ladddbox.webp"
+                alt=""
+                title="Laddbox"
+            /></a>
+          </div>
+          <h2>Laddbox</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
             dolore, laborum exercitationem repellendus ratione eaque. Id optio
@@ -58,8 +81,15 @@
           </p>
         </div>
         <div class="smarthem">
-          <img src="/img/smart.webp" alt="" />
-          <h2>smarthem</h2>
+          <div class="gallery">
+            <a href="/img/smart.webp"
+              ><img
+                src="/img/smart.webp"
+                alt=""
+                title="Smarthem"
+            /></a>
+          </div>
+          <h2>Smarthem</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis qui,
             dolores minus placeat necessitatibus aperiam voluptates, perferendis
@@ -67,7 +97,36 @@
             nulla, similique voluptatem omnis tempora dolorem.
           </p>
         </div>
+        <div class="contact">
+          <div id="service">
+            <a id="kontakt-vy" href="om oss/omoss.html">Våra tjänster</a>
+            <p id="kvt">
+              Belysning <br />Elinstalation <br />
+              Laddbox <br />
+              Smarthem
+            </p>
+          </div>
+          <div id="contact-us">
+            <a id="kontakt-vy" href="contact/contact.html">Kontakta oss</a>
+            <p id="kvt">
+              adrlod747@edu.linkoping.se <br />
+              076-803 09 85 <br />
+              @AdrianElectro(from amazing spiderman 2)
+            </p>
+          </div>
+          <div id="om-oss">
+            <a id="kontakt-vy" href="contact/contact.html">Om oss</a>
+            <p id="kvt">Arbeta hos oss</p>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="script.js"></script>
+    <script src="/lighbox/simple-lightbox.js"></script>
+    <script>
+      let lightbox = new SimpleLightbox(".gallery a", {
+        /* options */
+      });
+    </script>
   </body>
 </html>

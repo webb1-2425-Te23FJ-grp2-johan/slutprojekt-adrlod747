@@ -1,81 +1,143 @@
 * {
-    box-sizing: border-box;
-    
+  box-sizing: border-box;
 }
 body {
-   background-color:beige;
-   justify-content: center;
-   display: flex;
-   
+  background-color: beige;
+  justify-content: center;
+  display: flex;
 }
 .alles {
-    margin: 0;
-    min-width: 1200px;
-    display: grid;
-    /* gap: 20px; */
-    grid-template-rows: min-content 1fr;
-    grid-template-areas: 
+  margin: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  grid-template-areas:
     "men"
     "cont";
-
 }
 .menubox {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-area: men;
-    
+  width: 100%;
+  grid-area: men;
+  display: grid;
+  align-items: center;
+  grid-template-areas: "logga meny";
 }
 .menu {
-    height: 100px;
-    list-style: none;
-    display: flex;
-    justify-content: end;
-    background-color: grey;
-    align-items: center;
-    margin: 0;
-    grid-area: meny;
+  height: 100px;
+  width: 1030px;
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  background-color: #fdbf62;
+  align-items: center;
+  margin: 0;
+  grid-area: meny;
 }
-
-nav ul a{
-    display: flex;
-    margin-left: 50px;
-    margin-right: 100px;
-    padding: 5px;
-   /*justify-content: right;*/
-    text-decoration: none;
-    color: black;
+.logga {
+  width: 170px;
+  grid-area: logga;
+  align-items: center;
+}
+nav ul a {
+  display: flex;
+  margin-left: 50px;
+  margin-right: 100px;
+  padding: 10px 20px;
+  /*justify-content: right;*/
+  text-decoration: none;
+  color: #fdbf62;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  font-weight: 900;
+}
+nav ul a:hover {
+  color: whitesmoke;
+  background-color: transparent;
+  outline: solid thin white;
 }
 .container {
-    display: grid;
+    max-width: 1200px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "vdk vdk vdk"
+    "mail tel twitter"
+    "contact contact contact";
+  grid-area: cont;
+}
+#vdkontakt {
+    display: flex;
     justify-content: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "mail mail"
-    "tel tel"
-    "twitter twitter" 
-    "contact contact";
-    grid-area: cont;
+    font-size: larger;
+    font-weight: 800;
+    grid-area: vdk;
 }
 .mail {
-    grid-area: mail;
-    display: flex;
-    align-items: center;
+  grid-area: mail;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  padding: 30px;
 }
-.telefon{
-    grid-area: tel;
-    display: flex;
-    align-items: center;
+.telefon {
+  grid-area: tel;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  padding: 30px;
 }
 .twitter {
-    grid-area: twitter;
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  grid-area: twitter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  padding: 30px;
+  gap: 15px;
 }
 
 .contact {
-    margin-top: 50px;
-    height: 200px;
-    grid-area: contact;
-    background-color:aliceblue;
+  margin-top: 200px;
+  height: 200px;
+  grid-area: contact;
+  background-color: #fdbf62;
+  border: solid thin black;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "serv cus oss";
+}
+#service {
+  grid-area: serv;
+}
+#kontakt-vy {
+  color: black;
+  text-decoration: none;
+  font-size: large;
+}
+#kvt {
+  display: none;
+}
+#service:hover p {
+  display: block;
+  margin-left: 10px;
+}
+#contact-us {
+  grid-area: cus;
+}
+#contact-us:hover p {
+  display: block;
+  margin-left: 10px;
+}
+#om-oss {
+  grid-area: oss;
+}
+#om-oss:hover p {
+  display: block;
+  margin-left: 10px;
 }
