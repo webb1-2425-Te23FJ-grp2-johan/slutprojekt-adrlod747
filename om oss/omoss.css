@@ -24,6 +24,7 @@ body {
   grid-area: men;
   display: grid;
   align-items: center;
+  grid-template-columns: auto 1fr;
   grid-template-areas: "logga meny";
 }
 .menu {
