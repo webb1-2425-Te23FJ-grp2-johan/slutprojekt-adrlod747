@@ -5,10 +5,14 @@ body {
   background-color: whitesmoke;
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 .alles {
+  width: 100%;
   max-width: 1200px;
-  margin: 0;
+  margin: 0 auto;
   display: grid;
   grid-template-rows: min-content 1fr;
   grid-template-areas:
@@ -75,12 +79,12 @@ img {
   height: 400px;
   grid-area: bel;
   padding: 10px;
+  text-align: center;
 }
 .belysnin p {
   display: none;
-  width: 266px;
-  margin-left: auto;
 }
+
 .belysnin:hover,
 .belysnin:hover p {
   height: 450px;
@@ -182,7 +186,11 @@ img {
   display: block;
   margin-left: 10px;
 }
-
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media (max-width: 1200px) {
   .alles {
     max-width: 1000px;
@@ -214,6 +222,6 @@ img {
 }
 @media (max-width: 600px) {
   .alles {
-    max-width: 400px;
+    max-width: 95%;
   }
 }
