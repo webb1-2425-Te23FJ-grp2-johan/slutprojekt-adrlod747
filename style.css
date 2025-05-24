@@ -300,7 +300,10 @@ nav ul a:hover {
   }
   .huvudbild {
     background-image: url(/img/huvudbilden-1000.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+  
 }
 @media (max-width: 800px) {
   .alles {

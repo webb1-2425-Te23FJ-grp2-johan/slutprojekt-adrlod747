@@ -69,7 +69,7 @@ img {
   grid-area: cont;
 }
 .belysnin {
-  display: gird;
+  display: grid;
   justify-content: center;
   background-color: beige;
   height: 400px;
@@ -78,6 +78,8 @@ img {
 }
 .belysnin p {
   display: none;
+  width: 266px;
+  margin-left: auto;
 }
 .belysnin:hover,
 .belysnin:hover p {
