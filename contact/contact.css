@@ -141,3 +141,24 @@ nav ul a:hover {
   display: block;
   margin-left: 10px;
 }
+@media (max-width: 1200px) {
+  .alles {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1000px) {
+  .alles {
+    max-width: 800px;
+  }
+  
+}
+@media (max-width: 800px) {
+  .alles {
+    max-width: 600px;
+  }
+}
+@media (max-width: 600px) {
+  .alles {
+    max-width: 400px;
+  }
+}

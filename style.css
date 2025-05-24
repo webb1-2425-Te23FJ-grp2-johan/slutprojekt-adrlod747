@@ -15,6 +15,7 @@ h2 {
   letter-spacing: 0rem;
 }
 .alles {
+  max-width: 1200px;
   margin: 0;
   display: grid;
   grid-template-rows: min-content 1fr;
@@ -63,7 +64,6 @@ nav ul a:hover {
   outline: solid thin white;
 }
 .container {
-  max-width: 1200px;
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(2, 1fr);
@@ -74,16 +74,11 @@ nav ul a:hover {
     "cust cust"
     "contact contact";
   grid-area: cont;
-
-  /* gap: 20px; */
 }
 .huvudbild {
-  /* display: block; */
   background-image: url(img/huvudbilden.webp);
   height: 500px;
   grid-area: huvud;
-  font-weight: 900;
-  font-size: 200px;
   margin-top: 10px;
   color: white;
   border-radius: 20px;
@@ -292,4 +287,28 @@ nav ul a:hover {
   background-color: gray;
   color: white;
   transition: 0.3s;
+}
+
+@media (max-width: 1200px) {
+  .alles {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1000px) {
+  .alles {
+    max-width: 800px;
+  }
+  .huvudbild {
+    background-image: url(/img/huvudbilden-1000.webp);
+  }
+}
+@media (max-width: 800px) {
+  .alles {
+    max-width: 600px;
+  }
+}
+@media (max-width: 600px) {
+  .alles {
+    max-width: 400px;
+  }
 }
