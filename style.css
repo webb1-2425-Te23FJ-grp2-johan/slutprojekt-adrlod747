@@ -86,20 +86,12 @@ nav ul a:hover {
 .underbild {
   height: 410px;
   grid-area: under1;
-  /* padding-left: 30px;
-  padding-right: 30px; */
   margin: 10px;
   margin-top: 200px;
-  /* border-radius: 50px;
-  border: solid thick #fdbf62; */
 }
-/* .underbild h2{
-  text-align: center;
-} */
 #boka {
   color: black;
   text-decoration: none;
-  /* border: solid thin black; */
   border-radius: 10px;
   background-color: #fdbf62;
   padding: 10px;

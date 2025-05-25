@@ -45,7 +45,6 @@ nav ul a {
   margin-left: 50px;
   margin-right: 100px;
   padding: 10px 20px;
-  /*justify-content: right;*/
   text-decoration: none;
   color: #fdbf62;
   background-color: whitesmoke;
@@ -100,7 +99,10 @@ nav ul a:hover {
   padding: 30px;
   gap: 15px;
 }
-
+.twitter a {
+  text-decoration: none;
+  color: black;
+}
 .contact {
   margin-top: 200px;
   height: 200px;

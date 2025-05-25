@@ -51,7 +51,6 @@ nav ul a {
   margin-left: 50px;
   margin-right: 100px;
   padding: 10px 20px;
-  /*justify-content: right;*/
   text-decoration: none;
   color: #fdbf62;
   background-color: whitesmoke;
@@ -79,11 +78,12 @@ img {
 .belysnin {
   display: grid;
   justify-content: center;
-  background-color: beige;
+  background-color: #fdbf62;
   height: 400px;
   grid-area: bel;
   padding: 10px;
   text-align: center;
+  border-top-left-radius: 10px;
 }
 .belysnin p {
   display: none;
@@ -99,10 +99,12 @@ img {
 .elinstalation {
   display: grid;
   justify-content: center;
-  background-color: #ffd000;
+  background-color: #fdbf62;
   height: 400px;
   grid-area: elin;
   padding: 10px;
+  text-align: center;
+  border-top-right-radius: 10px;
 }
 .elinstalation p {
   display: none;
@@ -116,10 +118,12 @@ img {
 .laddbox {
   display: grid;
   justify-content: center;
-  background-color: #ffd000;
+  background-color: #fdbf62;
   height: 400px;
   grid-area: ladd;
   padding: 10px;
+  text-align: center;
+  border-bottom-left-radius: 10px;
 }
 .laddbox p {
   display: none;
@@ -133,10 +137,12 @@ img {
 .smarthem {
   display: grid;
   justify-content: center;
-  background-color: #ffd000;
+  background-color: #fdbf62;
   height: 400px;
   grid-area: smar;
   padding: 10px;
+  text-align: center;
+  border-bottom-right-radius: 10px;
 }
 .smarthem p {
   display: none;
@@ -221,6 +227,8 @@ img {
     "contact";
     p {
       display: block;
+      margin: 0 100px;
+      
     }
   }
 }
