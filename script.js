@@ -5,13 +5,10 @@ const cookie = document.querySelector(".cookie");
 
 Button.addEventListener("click", function (event) {
     annoying.style.display = "none";
-  });
-Button.addEventListener("click", function (event) {
     cookie.style.display = "none";
   });
+
 Button2.addEventListener("click", function (event) {
     annoying.style.display = "none";
-  });
-Button2.addEventListener("click", function (event) {
     cookie.style.display = "none";
   });
