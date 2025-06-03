@@ -321,6 +321,8 @@ nav ul a:hover {
   .underbild2 {
     margin-top: -50px;
     margin-bottom: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media (max-width: 600px) {
