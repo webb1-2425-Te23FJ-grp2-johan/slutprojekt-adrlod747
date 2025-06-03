@@ -231,20 +231,27 @@ nav ul a:hover {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
 }
-
+.kaka {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  z-index: 101;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
 .annoying {
   display: grid;
-  align-items: end;
-  width: 400px;
+  align-items: center;
+  width: 600px;
   height: 300px;
   background-color: whitesmoke;
   border: solid thick #fdbf62;
   border-radius: 20px;
   padding: 20px;
-  position: fixed;
-  margin-left: auto;
-  margin-top: 100px;
-  z-index: 101;
+  /* margin-left: auto;
+  margin-top: 100px; */
+
 }
 
 .Button {
@@ -298,6 +305,21 @@ nav ul a:hover {
 @media (max-width: 800px) {
   .alles {
     max-width: 600px;
+  }
+  .container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "huvud huvud"
+    "under1 under1"
+    "under2 under2"
+    "under3 under3"
+    "cust cust"
+    "contact contact";
+  }
+  .under2 {
+    margin-top: 0px;
   }
 }
 @media (max-width: 600px) {
