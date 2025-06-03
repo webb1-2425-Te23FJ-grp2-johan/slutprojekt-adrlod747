@@ -318,8 +318,8 @@ nav ul a:hover {
     "cust cust"
     "contact contact";
   }
-  .under2 {
-    margin-top: 0px;
+  .underbild2 {
+    margin-top: -50px;
   }
 }
 @media (max-width: 600px) {
